@@ -1,0 +1,2 @@
+{{url="https://raw.githubusercontent.com/HeroBrine1st/CryptedNote/master/1.0/cryptednote.lua",path="/usr/bin/cryptednote.lua"},
+{url="https://raw.githubusercontent.com/HeroBrine1st/Libraries/master/crypt.lua",path="/usr/lib/crypt.lua"}}
