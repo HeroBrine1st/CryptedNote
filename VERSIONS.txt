@@ -1,0 +1,6 @@
+{
+  {version = "1.0",
+  description = {eu_RU="None",eu_EN="None"},
+  raw = "https://raw.githubusercontent.com/HeroBrine1st/CryptedNote/master/1.0/filelist.txt",
+  exp=false}
+}
