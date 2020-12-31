@@ -119,11 +119,11 @@ while not tmp.keys do
   local psk = term.read(_,_,_,"•")
   if not psk then print("Выход") os.exit() end
   print("\nВычисление контрольной суммы...")
-  local checksum = crypt.md5(psk)
+  local checksum = crypt.md5(crypt.md5(crypt.md5(crypt.md5(crypt.md5(psk)))))
   write("Вычисление контрольной суммы... Контрольная сумма вычислена")
   if tmp.md5 then 
     print("Сравнение контрольных сумм... ")
-    if tmp.md5 == crypt.md5(psk) then 
+    if tmp.md5 == checksum then 
       write("Сравнение контрольных сумм...  Пароль верный")
       print("Создание таблицы ключей...") 
       tmp.keys = crypt.getkey(psk) 
