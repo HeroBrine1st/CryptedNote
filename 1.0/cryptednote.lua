@@ -139,7 +139,7 @@ while not tmp.keys do
       print("Удаление " .. file)
       fs.remove(fs.concat(dir,file))
     end
-    tmp.md5 = crypt.md5(psk)
+    tmp.md5 = checksum
     writeFile(fs.concat(dir,"password.md5"),tmp.md5)
     print("Создание таблицы ключей...")
     tmp.keys = crypt.getkey(psk)
